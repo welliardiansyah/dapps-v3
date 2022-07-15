@@ -1,0 +1,156 @@
+.k-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.k-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* margin-bottom: 2rem; */
+  /* margin-left: 1rem; */
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.tvl-header {
+  display: flex;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.tvl-header > * {
+  flex: 50%;
+  margin: 5px;
+}
+
+.flex-grid {
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+}
+
+.col > * {
+  line-height: 1.5;
+}
+
+#content-header {
+  padding: 0rem 0.8rem;
+}
+
+#content-header .col > * {
+  line-height: 1;
+  padding: 2px;
+}
+
+#content-header .flex-grid {
+  align-items: flex-end;
+  opacity: 0.7;
+  /* font-size: 0.95rem; */
+}
+
+.k-grid > .col:not(:nth-of-type(2)) {
+  text-align: center;
+}
+
+.k-grid > .col:nth-of-type(1) {
+  flex: 1;
+  margin-right: 0.4rem;
+}
+.k-grid > .col:nth-of-type(2) {
+  flex: 3;
+}
+.k-grid > .col:nth-of-type(3) {
+  flex: 2;
+}
+.k-grid > .col:nth-of-type(4) {
+  flex: 3;
+}
+.k-grid > .col:nth-of-type(5) {
+  flex: 2;
+}
+.k-grid > .col:nth-of-type(6) {
+  flex: 2;
+}
+.k-grid > .col:nth-of-type(7) {
+  flex: 2;
+}
+/* .k-grid > .col:nth-of-type(5) > * {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+} */
+
+.token {
+  font-size: 1.2rem;
+}
+
+.inactive {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .k-header {
+    flex-direction: column;
+  }
+
+  .k-grid {
+    flex-direction: column;
+  }
+
+  .k-grid > .col {
+    margin-top: 0.8rem;
+  }
+
+  .k-details > div > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* .k-details > div:nth-child(2) > div:last-child > div:nth-child(2) {
+    align-self: left;
+  } */
+
+  .k-details {
+    flex-direction: column;
+  }
+  .k-details > div:nth-child(1), .k-details > div:nth-child(2), .k-details > div:nth-child(3) {
+    margin-top: 0.8rem;
+    width: 100%;
+  }
+  .k-details > div > div {
+    margin-top: 0.8rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .k-details a {
+    margin:0 auto;
+  }
+
+  .k-card > .flex-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .k-card .flex-grid .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .k-card .flex-grid .col {
+    margin-top: 0.8rem;
+  }
+
+  /*.k-card .flex-grid .col:nth-child(1), .k-card .flex-grid .col:nth-child(2), .k-card .flex-grid .col:last-child {*/
+}
